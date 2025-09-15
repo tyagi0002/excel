@@ -34,7 +34,7 @@ class AudioService:
         
         try:
             # Load API key from environment
-            api_key = "81992e66aa624ee9a7ab039b75f3bc1d"
+            api_key = os.getenv('ASSEMBLYAI_API_KEY')
             if not api_key:
                 print("ASSEMBLYAI_API_KEY not found in environment variables")
                 print("To enable audio: Set ASSEMBLYAI_API_KEY environment variable")
@@ -172,9 +172,9 @@ class LLMService:
         
         try:
             # Load API key from environment
-            api_key = "AIzaSyCQ4rg8fj0AG4IxhktYBlWBcG0rmwi5oRk"
+            api_key = os.getenv('GOOGLE_API_KEY')
             if not api_key:
-                print("GEMINI_API_KEY or GOOGLE_API_KEY not found in environment variables")
+                print("GOOGLE_API_KEY not found in environment variables")
                 print("Using fallback evaluation")
                 return
             
