@@ -1,0 +1,22 @@
+version: "3.9"
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: ../Dockerfile.backend
+    container_name: interview-backend
+    ports:
+      - "8000:8000"
+    environment:
+      - ASSEMBLYAI_API_KEY=${ASSEMBLYAI_API_KEY}
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY}
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: ../Dockerfile.frontend
+    container_name: interview-frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend

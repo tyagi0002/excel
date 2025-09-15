@@ -1,0 +1,98 @@
+{
+    "beginner": [
+      {
+        "text": "How do you add up all numbers in cells A1 through A10?",
+        "category": "Basic Formulas",
+        "difficulty": 1,
+        "expected_answer": "Use the SUM function: =SUM(A1:A10)"
+      },
+      {
+        "text": "What keyboard shortcut saves an Excel file?",
+        "category": "Basics",
+        "difficulty": 1,
+        "expected_answer": "Ctrl+S"
+      },
+      {
+        "text": "How do you make text bold in Excel?",
+        "category": "Formatting",
+        "difficulty": 1,
+        "expected_answer": "Select the text and press Ctrl+B or use the Bold button"
+      },
+      {
+        "text": "What function counts the number of cells that contain numbers?",
+        "category": "Basic Formulas",
+        "difficulty": 1,
+        "expected_answer": "The COUNT function, for example =COUNT(A1:A10)"
+      },
+      {
+        "text": "How do you select an entire column in Excel?",
+        "category": "Basics",
+        "difficulty": 1,
+        "expected_answer": "Click on the column header letter, or press Ctrl+Space when in the column"
+      }
+    ],
+    "intermediate": [
+      {
+        "text": "Explain how VLOOKUP works and provide an example.",
+        "category": "Lookup Functions",
+        "difficulty": 2,
+        "expected_answer": "VLOOKUP searches for a value in the first column of a table and returns a value in the same row from a specified column. Example: =VLOOKUP(A1,B:D,2,FALSE)"
+      },
+      {
+        "text": "How do you freeze panes in Excel?",
+        "category": "Navigation",
+        "difficulty": 2,
+        "expected_answer": "Select the cell below and to the right of where you want to freeze, then go to View > Freeze Panes"
+      },
+      {
+        "text": "What is the difference between relative and absolute cell references?",
+        "category": "Formulas",
+        "difficulty": 2,
+        "expected_answer": "Relative references (A1) change when copied, absolute references ($A$1) stay fixed, mixed references ($A1 or A$1) fix either column or row"
+      },
+      {
+        "text": "How would you remove duplicate values from a dataset?",
+        "category": "Data Management",
+        "difficulty": 2,
+        "expected_answer": "Select the data, go to Data tab, click Remove Duplicates, choose columns to check, click OK"
+      },
+      {
+        "text": "What does the IF function do and how do you use it?",
+        "category": "Logical Functions",
+        "difficulty": 2,
+        "expected_answer": "IF function performs logical tests and returns different values based on TRUE/FALSE. Syntax: =IF(condition, value_if_true, value_if_false)"
+      }
+    ],
+    "advanced": [
+      {
+        "text": "How would you create a pivot table to analyze sales data by region?",
+        "category": "Pivot Tables",
+        "difficulty": 3,
+        "expected_answer": "Select data range, Insert > PivotTable, drag Region to Rows, drag Sales to Values area"
+      },
+      {
+        "text": "Explain INDEX and MATCH functions and how they work together.",
+        "category": "Advanced Formulas",
+        "difficulty": 3,
+        "expected_answer": "INDEX returns value from specific position, MATCH finds position. Together: =INDEX(return_array,MATCH(lookup_value,lookup_array,0)) provides flexible lookups"
+      },
+      {
+        "text": "How do you use conditional formatting to highlight cells based on values?",
+        "category": "Formatting",
+        "difficulty": 3,
+        "expected_answer": "Select range, Home > Conditional Formatting, choose rule type, set criteria, choose formatting"
+      },
+      {
+        "text": "What are dynamic array formulas and how do they work?",
+        "category": "Advanced Formulas",
+        "difficulty": 3,
+        "expected_answer": "Dynamic arrays return multiple values that spill to adjacent cells automatically. Use functions like FILTER, UNIQUE, SORT without Ctrl+Shift+Enter"
+      },
+      {
+        "text": "How would you create a dashboard with interactive charts in Excel?",
+        "category": "Visualization",
+        "difficulty": 3,
+        "expected_answer": "Use pivot tables/charts, add slicers for interactivity, organize on dashboard sheet, use data validation for dropdowns"
+      }
+    ]
+  }
